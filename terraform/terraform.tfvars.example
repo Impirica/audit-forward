@@ -1,0 +1,14 @@
+# Copy this file to terraform.tfvars and fill in your actual values
+# cp terraform.tfvars.example terraform.tfvars
+
+subscription_id     = ""
+tenant_id           = ""
+resource_group_name = "rg-audit-forward"
+location            = "canadacentral" # e.g., "eastus", "westus2", "centralus"
+environment         = "dev"           # e.g., "dev", "staging", "prod"
+
+tags = {
+  Environment = "test-audit-forward"
+  ManagedBy   = "Terraform"
+  Project     = "test audit forward"
+}
